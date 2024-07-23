@@ -9,7 +9,7 @@ import math
 import pandas as pd
 from scipy.optimize import root
 
-pd.set_option('display.float_format', '{:.2f}'.format)
+pd.set_option('display.float_format', '{:.3f}'.format)
 pd.set_option('display.max_columns', None)
 
 class NACA4turbo:
@@ -35,20 +35,20 @@ class NACA4turbo:
         self.f.x = np.linspace(0, 1, self.n)
         
         # координата линии развала
-        self.f.yc.loc[((self.f.x <= self.p))] = (self.m / self.p**2 * 
-                    (2 * self.p * self.f.x.loc[((self.f.x < self.p))] - 
-                    self.f.x.loc[((self.f.x < self.p))]**2))
+        self.f.loc[((self.f.x <= self.p)), 'yc'] = (self.m / self.p**2 *
+                    (2 * self.p * self.f.loc[((self.f.x < self.p)), 'x'] -
+                    self.f.loc[((self.f.x < self.p)), 'x']**2))
         
-        self.f.yc.loc[((self.f.x > self.p))] = (self.m / (1 - self.p)**2 * 
-                    (1 - 2 * self.p + 2 * self.p * self.f.x.loc[((self.f.x > self.p))] - 
-                     self.f.x.loc[((self.f.x > self.p))]**2))
+        self.f.loc[((self.f.x > self.p)), 'yc'] = (self.m / (1 - self.p)**2 *
+                    (1 - 2 * self.p + 2 * self.p * self.f.loc[((self.f.x > self.p)), 'x'] -
+                     self.f.loc[((self.f.x > self.p)), 'x']**2))
         
         # градиент линии развала 
-        self.f.dyc.loc[((self.f.x <= self.p))] = (2 * self.m / self.p**2 * 
-                    (self.p - self.f.x.loc[((self.f.x <= self.p))]))
+        self.f.loc[((self.f.x <= self.p)), 'dyc'] = (2 * self.m / self.p**2 *
+                    (self.p - self.f.loc[((self.f.x <= self.p)), 'x']))
         
-        self.f.dyc.loc[((self.f.x > self.p))] = (2 * self.m / (1 - self.p)**2 * 
-                    (self.p - self.f.x.loc[((self.f.x > self.p))]))
+        self.f.loc[((self.f.x > self.p)), 'dyc'] = (2 * self.m / (1 - self.p)**2 *
+                    (self.p - self.f.loc[((self.f.x > self.p)), 'x']))
         
         # толщина 
         self.f.yt = self.t / 2 * self.pol(self.f.x) * 10
@@ -107,8 +107,6 @@ class NACA4turbo:
         print(sol.x[0])
         
         
-pr = NACA4turbo(4,12)
-pr.optim(74)
-pr.plot()
+
 
 
