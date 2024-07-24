@@ -35,19 +35,19 @@ class NACA4camb:
         self.f.x = np.linspace(0, 1, n)
         
         # координата линии развала
-        self.f.yc.loc[((self.f.x <= self.p))] = (self.m / self.p**2 * 
+        self.f.loc[((self.f.x <= self.p)), 'yc'] = (self.m / self.p**2 *
                     (2 * self.p * self.f.x.loc[((self.f.x < self.p))] - 
                     self.f.x.loc[((self.f.x < self.p))]**2))
         
-        self.f.yc.loc[((self.f.x > self.p))] = (self.m / (1 - self.p)**2 * 
+        self.f.loc[((self.f.x > self.p)), 'yc'] = (self.m / (1 - self.p)**2 *
                     (1 - 2 * self.p + 2 * self.p * self.f.x.loc[((self.f.x > self.p))] - 
                      self.f.x.loc[((self.f.x > self.p))]**2))
         
         # градиент линии развала 
-        self.f.dyc.loc[((self.f.x <= self.p))] = (2 * self.m / self.p**2 * 
+        self.f.loc[((self.f.x <= self.p)), 'dyc'] = (2 * self.m / self.p**2 *
                     (self.p - self.f.x.loc[((self.f.x <= self.p))]))
         
-        self.f.dyc.loc[((self.f.x > self.p))] = (2 * self.m / (1 - self.p)**2 * 
+        self.f.loc[((self.f.x > self.p)), 'dyc'] = (2 * self.m / (1 - self.p)**2 *
                     (self.p - self.f.x.loc[((self.f.x > self.p))]))
         
         # толщина 
@@ -80,7 +80,7 @@ class NACA4camb:
         file_name = 'NACA' + self.profile + '.jpg'
         plt.title('NACA' + self.profile, loc='left')
         plt.tight_layout() # оптимизируем поля и расположение объектов
-        # plt.savefig(file_name, dpi = 300)
+        plt.savefig('NACA4camb.jpg', dpi = 300)
         plt.show()
 
 # pr = NACA4camb('2412')

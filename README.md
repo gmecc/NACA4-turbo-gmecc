@@ -2,10 +2,18 @@
 NACA for turbine stages
 
 
-# расчет теоретического профиля
+# NACA4 theoretical profile calculation
 ```python
 pr = NACA4turbo(p=4, t=12)
 ```
+![NACA4camb](images/NACA4camb.jpg)
+
+
+```python
+pr.f
+```
+
+
 
 # расчет профиля по заданному углу поворота потока
 ```python
