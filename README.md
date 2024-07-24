@@ -41,19 +41,24 @@ pr.plot()
 ![NACA4-turbo-alpha](images/NACA4-turbo-alpha.jpg)
 
 
-# координата верхней поверхности профиля
+# Coordinate of the top surface of the profile
 ```python
 print([pr.f.xU, pr.f.yU])
 ```
 
-# координата верхней поверхности профиля
+# Coordinate of the bottom surface of the profile
 ```python
 print([pr.f.xL, pr.f.yL])
 pr.plot()
 ```
 
+
+# Turbine profile
+
 Угол установки
 Угол входа
 Угол выхода
 
-# расчет профиля турбинной решетки
+
+
+
