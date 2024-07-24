@@ -1,5 +1,5 @@
 # NACA4-turbo-gmecc
-NACA for turbine stages
+NACA profile for turbine stages
 
 # Navigation
 <!-- TOC -->
