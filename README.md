@@ -7,9 +7,9 @@ NACA for turbine stages
 * [Navigation](#navigation)
 * [NACA4 theoretical profile calculation](#naca4-theoretical-profile-calculation)
 * [NACA4 turbo](#naca4-turbo)
-* [Calculation of the profile based on the angle of rotation of the flow](#calculation-of-the-profile-based-on-the-angle-of-rotation-of-the-flow)
-* [Coordinate of the top surface of the profile](#coordinate-of-the-top-surface-of-the-profile)
-* [Coordinate of the bottom surface of the profile](#coordinate-of-the-bottom-surface-of-the-profile)
+  * [Calculation of the profile based on the angle of rotation of the flow](#calculation-of-the-profile-based-on-the-angle-of-rotation-of-the-flow)
+  * [Coordinate of the top surface of the profile](#coordinate-of-the-top-surface-of-the-profile)
+  * [Coordinate of the bottom surface of the profile](#coordinate-of-the-bottom-surface-of-the-profile)
 * [Turbine profile](#turbine-profile)
 <!-- TOC -->
 
@@ -43,7 +43,7 @@ pr.f
 ```
 
 
-# Calculation of the profile based on the angle of rotation of the flow
+## Calculation of the profile based on the angle of rotation of the flow
 
 ```python
 pr.optim(dalpha=64)
@@ -52,12 +52,12 @@ pr.plot()
 ![NACA4-turbo-alpha](images/NACA4-turbo-alpha.jpg)
 
 
-# Coordinate of the top surface of the profile
+## Coordinate of the top surface of the profile
 ```python
 print([pr.f.xU, pr.f.yU])
 ```
 
-# Coordinate of the bottom surface of the profile
+## Coordinate of the bottom surface of the profile
 ```python
 print([pr.f.xL, pr.f.yL])
 pr.plot()
