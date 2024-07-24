@@ -12,6 +12,9 @@ NACA for turbine stages
   * [Coordinate of the top surface of the profile](#coordinate-of-the-top-surface-of-the-profile)
   * [Coordinate of the bottom surface of the profile](#coordinate-of-the-bottom-surface-of-the-profile)
 * [Turbine profile](#turbine-profile)
+  * [Installation angle](#installation-angle)
+  * [Entry angle](#entry-angle)
+  * [Exit angle](#exit-angle)
 <!-- TOC -->
 
 # Parameters
@@ -70,13 +73,10 @@ print([pr.f.xL, pr.f.yL])
 pr.plot()
 ```
 
-
 # Turbine profile
 
-Угол установки
-Угол входа
-Угол выхода
+## Installation angle
 
+## Entry angle
 
-
-
+## Exit angle
