@@ -95,7 +95,7 @@ class NACA4turbo:
         # file_name =  title + '.jpg'
         # plt.title(title, loc='left')
         plt.tight_layout() # оптимизируем поля и расположение объектов
-        # plt.savefig(file_name, dpi = 300)
+        plt.savefig('NACA4-turbo-alpha.jpg', dpi = 300)
         plt.show()
 
 
