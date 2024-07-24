@@ -1,6 +1,17 @@
 # NACA4-turbo-gmecc
 NACA for turbine stages
 
+# Navigation
+<!-- TOC -->
+* [NACA4-turbo-gmecc](#naca4-turbo-gmecc)
+* [Navigation](#navigation)
+* [NACA4 theoretical profile calculation](#naca4-theoretical-profile-calculation)
+* [NACA4 turbo](#naca4-turbo)
+* [Calculation of the profile based on the angle of rotation of the flow](#calculation-of-the-profile-based-on-the-angle-of-rotation-of-the-flow)
+* [Coordinate of the top surface of the profile](#coordinate-of-the-top-surface-of-the-profile)
+* [Coordinate of the bottom surface of the profile](#coordinate-of-the-bottom-surface-of-the-profile)
+* [Turbine profile](#turbine-profile)
+<!-- TOC -->
 
 # NACA4 theoretical profile calculation
 ```python
