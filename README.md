@@ -68,7 +68,9 @@ then:
 
 
 ```python
-pr = NACA4turbo(p=4, t=12)
+from naca4turbo import NACA4camb
+pr = NACA4camb('9410')
+pr.plot()
 ```
 ![NACA4camb](images/NACA4camb.jpg)
 
