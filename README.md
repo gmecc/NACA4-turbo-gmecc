@@ -106,7 +106,7 @@ pr.f
 
 ## Calculation of the profile based on the angle of rotation of the flow
 
-- 'dalpha' - flow angle.
+- `dalpha` - flow angle.
 
 ```python
 from naca4turbo import NACA4turbo
