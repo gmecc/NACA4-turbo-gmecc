@@ -97,7 +97,7 @@ pr.plot()
 
 ![NACA4-turbo](images/NACA4-turbo.jpg)
 
-## Profile coordinates:
+## Profile coordinates
 
 ```python
 pr.f
@@ -123,7 +123,6 @@ print([pr.f.xU, pr.f.yU])
 ## Coordinate of the bottom surface of the profile
 ```python
 print([pr.f.xL, pr.f.yL])
-pr.plot()
 ```
 
 # Turbine profile
