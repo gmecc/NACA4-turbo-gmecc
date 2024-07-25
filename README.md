@@ -81,8 +81,8 @@ in maximum camber has been expanded.
 ## Paramerers
 
 - `p` - the position of the maximum camber divided by 10.
-- `m` - the maximum camber divided by 100.
 - `t` - the thickness divided by 100.
+- `m` - the maximum camber divided by 100.
 
 
 
