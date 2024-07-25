@@ -1,4 +1,4 @@
-# NACA profile for turbine stages
+# NACA airfoil for turbine stages
 
 # Navigation
 <!-- TOC -->
@@ -20,7 +20,7 @@
   * [Exit angle](#exit-angle)
 <!-- TOC -->
 
-# Profile geometry
+# Airfoil geometry
 
 NACA stands for the National Advisory Committee for Aeronautics, 
 which was a U.S. federal agency founded in 1915 to undertake, 
@@ -59,7 +59,7 @@ then:
 
 
 
-# NACA4 theoretical profile calculation
+# NACA4 theoretical airfoil calculation
 
 ```python
 from naca4turbo import NACA4camb
@@ -68,7 +68,7 @@ pr.plot()
 ```
 ![NACA4camb](images/NACA4camb.jpg)
 
-Profile coordinates:
+Airfoil coordinates:
 
 ```python
 pr.f
@@ -76,7 +76,7 @@ pr.f
 
 # NACA4 turbo
 
-When calculating the turbine profile, the range of changes 
+When calculating the turbine airfoil, the range of changes 
 in maximum camber has been expanded.
 
 
@@ -86,7 +86,7 @@ in maximum camber has been expanded.
 - `t` - the thickness divided by 100.
 - `m` - the maximum camber divided by 100.
 
-## Profile calculation
+## Airfoil calculation
 
 ```python
 from naca4turbo import NACA4turbo
@@ -97,14 +97,14 @@ pr.plot()
 
 ![NACA4-turbo](images/NACA4-turbo.jpg)
 
-## Profile coordinates
+## Airfoil coordinates
 
 ```python
 pr.f
 ```
 
 
-## Calculation of the profile based on the angle of rotation of the flow
+## Calculation of the airfoil based on the angle of rotation of the flow
 
 - `dalpha` - flow angle.
 
@@ -117,17 +117,17 @@ pr.plot()
 ![NACA4-turbo-alpha](images/NACA4-turbo-alpha.jpg)
 
 
-## Coordinate of the top surface of the profile
+## Coordinate of the top surface of the airfoil
 ```python
 print([pr.f.xU, pr.f.yU])
 ```
 
-## Coordinate of the bottom surface of the profile
+## Coordinate of the bottom surface of the airfoil
 ```python
 print([pr.f.xL, pr.f.yL])
 ```
 
-# Turbine profile
+# Turbine airfoil
 
 ## Installation angle
 
