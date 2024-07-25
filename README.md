@@ -16,7 +16,16 @@
   * [Exit angle](#exit-angle)
 <!-- TOC -->
 
-# Parameters
+# Profile geometry
+
+NACA stands for the National Advisory Committee for Aeronautics, 
+which was a U.S. federal agency founded in 1915 to undertake, 
+promote, and institutionalize aeronautical research. It played a 
+crucial role in advancing aviation technology, including the 
+development of airfoils, which are the cross-sectional shapes 
+of wings and other aerodynamic surfaces. The NACA airfoil series 
+is a set of standardized airfoil shapes developed by this agency, 
+which became widely used in the design of aircraft wings.
 
 ![](images/naca4.png)
 
