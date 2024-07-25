@@ -22,10 +22,6 @@ class NACA4camb:
         self.pol = lambda x: (0.2969*x**.5 - 0.126*x - 0.3516*x**2 + 
                               0.2843*x**3 - 0.1015*x**4)
         
-        # print(f'{self.m = }')
-        # print(f'{self.p = }')
-        # print(f'{self.t = }')
-        
     def plot(self, n=100):
 
         n = 200
@@ -63,8 +59,6 @@ class NACA4camb:
         self.f.xU = self.f.x - self.f.yt * np.sin(self.f.teta)
         self.f.xL = self.f.x + self.f.yt * np.sin(self.f.teta)
         
-        # print(self.f)
-        
         plt.figure(figsize=(5, 4))
         
         plt.plot(self.f.xU,self.f.yU,color='red',lw=1) # верхняя поверхность
@@ -83,7 +77,6 @@ class NACA4camb:
         plt.savefig('NACA4camb.jpg', dpi = 300)
         plt.show()
 
-# pr = NACA4camb('2412')
-# pr.plot()
+
 
 

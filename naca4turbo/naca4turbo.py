@@ -22,10 +22,7 @@ class NACA4turbo:
         self.pol = lambda x: (0.2969*x**.5 - 0.126*x - 0.3516*x**2 + 
                               0.2843*x**3 - 0.1015*x**4)
         
-        # print(f'{self.m = }')
-        # print(f'{self.p = }')
-        # print(f'{self.t = }')
-        
+
     def profile(self, m):
         self.m = m / 100 # максимальный развал
         self.n = 200
@@ -74,8 +71,6 @@ class NACA4turbo:
        
         self.g['d_alpha'] = self.g['alpha1'] - self.g['alpha2']
         
-        # print(self.g)
-        # print(self.f)
         return self.g['d_alpha']
         
         
