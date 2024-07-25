@@ -94,7 +94,7 @@ class NACA4turbo:
         plt.show()
 
 
-    def optim(self, dalpha):
+    def flowAngle(self, dalpha):
         def func_resedual(x, dalpha):
             resedual = self.profile(m=x) - dalpha
             return resedual

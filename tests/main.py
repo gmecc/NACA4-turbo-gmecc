@@ -4,7 +4,7 @@ pr.profile(m=10)
 pr.plot()
 
 # расчет профиля по заданному углу поворота потока
-pr.optim(dalpha=64)
+pr.flowAngle(dalpha=64)
 pr.plot()
 
 

@@ -111,7 +111,7 @@ pr.f
 ```python
 from naca4turbo import NACA4turbo
 pr = NACA4turbo(p=4, t=10)
-pr.optim(dalpha=64)
+pr.flowAngle(dalpha=64)
 pr.plot()
 ```
 ![NACA4-turbo-alpha](images/NACA4-turbo-alpha.jpg)
