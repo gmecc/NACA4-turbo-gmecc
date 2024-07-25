@@ -9,6 +9,8 @@
 * [NACA4 theoretical profile calculation](#naca4-theoretical-profile-calculation)
 * [NACA4 turbo](#naca4-turbo)
   * [Paramerers](#paramerers)
+  * [Profile calculation](#profile-calculation)
+  * [Profile coordinates:](#profile-coordinates)
   * [Calculation of the profile based on the angle of rotation of the flow](#calculation-of-the-profile-based-on-the-angle-of-rotation-of-the-flow)
   * [Coordinate of the top surface of the profile](#coordinate-of-the-top-surface-of-the-profile)
   * [Coordinate of the bottom surface of the profile](#coordinate-of-the-bottom-surface-of-the-profile)
@@ -84,7 +86,7 @@ in maximum camber has been expanded.
 - `t` - the thickness divided by 100.
 - `m` - the maximum camber divided by 100.
 
-
+## Profile calculation
 
 ```python
 from naca4turbo import NACA4turbo
@@ -95,7 +97,7 @@ pr.plot()
 
 ![NACA4-turbo](images/NACA4-turbo.jpg)
 
-Profile coordinates:
+## Profile coordinates:
 
 ```python
 pr.f
