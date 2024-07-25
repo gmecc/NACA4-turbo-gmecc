@@ -2,11 +2,14 @@
 
 # Navigation
 <!-- TOC -->
-* [NACA4-turbo-gmecc](#naca4-turbo-gmecc)
+* [NACA profile for turbine stages](#naca-profile-for-turbine-stages)
 * [Navigation](#navigation)
-* [Parameters](#parameters)
+* [Profile geometry](#profile-geometry)
+* [NACA 4 digit airfoil specification](#naca-4-digit-airfoil-specification)
 * [NACA4 theoretical profile calculation](#naca4-theoretical-profile-calculation)
+  * [Paramerers](#paramerers)
 * [NACA4 turbo](#naca4-turbo)
+  * [Paramerers](#paramerers-1)
   * [Calculation of the profile based on the angle of rotation of the flow](#calculation-of-the-profile-based-on-the-angle-of-rotation-of-the-flow)
   * [Coordinate of the top surface of the profile](#coordinate-of-the-top-surface-of-the-profile)
   * [Coordinate of the bottom surface of the profile](#coordinate-of-the-bottom-surface-of-the-profile)
