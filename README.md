@@ -20,7 +20,16 @@
 
 ![](images/naca4.png)
 
-
+Profile geometry:
+- 1: Zero-lift line; 
+- 2: Leading edge; 
+- 3: Nose circle; 
+- 4: Max. thickness; 
+- 5: Camber; 
+- 6: Upper surface; 
+- 7: Trailing edge; 
+- 8: Camber mean-line; 
+- 9: Lower surface
 
 # NACA4 theoretical profile calculation
 ```python
