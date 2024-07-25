@@ -46,7 +46,7 @@ This NACA airfoil series is controlled by 4 digits e.g.
 NACA 2412, which designate the camber, position of the maximum 
 camber and thickness. If an airfoil number is
 
-$$NACA \quad M \: P \: XX$$
+$$NACA \quad M \quad P \quad XX$$
 
 then:
 - `M` is the maximum camber divided by 100. In the example M=2 so the camber is 0.02 or 2% of the chord
