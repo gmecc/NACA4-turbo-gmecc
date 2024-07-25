@@ -22,10 +22,9 @@ class NACA4camb:
         self.pol = lambda x: (0.2969*x**.5 - 0.126*x - 0.3516*x**2 + 
                               0.2843*x**3 - 0.1015*x**4)
         
-    def plot(self, n=100):
+    def plot(self, n=200):
 
-        n = 200
-        self.f = pd.DataFrame(columns=['x', 'yc', 'dyc', 'teta', 'yt', 'xU', 'yU', 
+        self.f = pd.DataFrame(columns=['x', 'yc', 'dyc', 'teta', 'yt', 'xU', 'yU',
                     'xL', 'yL'], index=range(n), dtype=float)
         
         self.f.x = np.linspace(0, 1, n)
