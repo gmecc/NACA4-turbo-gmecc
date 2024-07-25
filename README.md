@@ -18,7 +18,7 @@
 
 # Parameters
 
-![](images/naca.jpg)
+![](images/naca4.png)
 
 
 
