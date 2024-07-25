@@ -1,7 +1,7 @@
 from naca4turbo import NACA4turbo
 pr = NACA4turbo(p=4, t=10)
-# pr.profile(m=10)
-# pr.plot()
+pr.profile(m=10)
+pr.plot()
 
 # расчет профиля по заданному углу поворота потока
 pr.optim(dalpha=64)

@@ -60,13 +60,6 @@ then:
 
 # NACA4 theoretical profile calculation
 
-## Paramerers
-
-- `p` - the position of the maximum camber divided by 10.
-- `m` - the maximum camber divided by 100.
-- `t` - the thickness divided by 100.
-
-
 ```python
 from naca4turbo import NACA4camb
 pr = NACA4camb('9410')
@@ -91,6 +84,8 @@ in maximum camber has been expanded.
 - `p` - the position of the maximum camber divided by 10.
 - `m` - the maximum camber divided by 100.
 - `t` - the thickness divided by 100.
+
+
 
 ```python
 from naca4turbo import NACA4turbo
